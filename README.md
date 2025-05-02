@@ -36,6 +36,9 @@ The above would be equivalent to running the following in the shell:
 ```shell
 gitlab-ci-local --file=_gitlab-ci.yml
 ```
+License
+-------
+This project is licensed under the terms of the MIT License. You can view the full license [here](LICENSE).
 
 [GITLAB_CI_LOCAL]: https://github.com/firecow/gitlab-ci-local
 [PRE_COMMIT]: https://pre-commit.com/
