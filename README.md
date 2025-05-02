@@ -37,5 +37,5 @@ The above would be equivalent to running the following in the shell:
 gitlab-ci-local --file=_gitlab-ci.yml
 ```
 
-[GITLAB_CI_LOCAL][https://github.com/firecow/gitlab-ci-local]
-[PRE_COMMIT][https://pre-commit.com/]
+[GITLAB_CI_LOCAL]: https://github.com/firecow/gitlab-ci-local
+[PRE_COMMIT]: https://pre-commit.com/
