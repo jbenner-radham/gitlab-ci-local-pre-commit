@@ -3,5 +3,6 @@
   entry: gitlab-ci-local
   args: [--file, _gitlab-ci.yml]
   language: node
+  pass_filenames: false
   require_serial: true
   minimum_pre_commit_version: "4.2.0"
