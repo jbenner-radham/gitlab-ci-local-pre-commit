@@ -1,7 +1,7 @@
 - id: gitlab-ci-local
   name: gitlab ci local
   entry: gitlab-ci-local
-  args: [--file, _gitlab-ci.yml]
+  args: []
   language: node
   pass_filenames: false
   require_serial: true
