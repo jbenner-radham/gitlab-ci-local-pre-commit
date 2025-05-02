@@ -1,0 +1,14 @@
+{
+  "name": "gitlab-ci-local-pre-commit",
+  "version": "4.59.0",
+  "private": true,
+  "description": "A pre-commit hook to run gitlab-ci-local.",
+  "license": "MIT",
+  "author": "James Benner <hello@jamesbenner.com> (https://www.jamesbenner.com/)",
+  "bin": {
+    "gitlab-ci-local": "./node_modules/gitlab-ci-local/src/index.js"
+  },
+  "dependencies": {
+    "gitlab-ci-local": "^4.59.0"
+  }
+}
