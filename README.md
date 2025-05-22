@@ -9,7 +9,7 @@ Add the hook to your project's `.pre-commit-config.yaml` like so:
 ```yaml
 repos:
   - repo: https://github.com/jbenner-radham/gitlab-ci-local-pre-commit
-    rev: v4.59.0
+    rev: v4.60.0
     hooks:
       - id: gitlab-ci-local
 ```
@@ -25,17 +25,30 @@ If you need to pass custom arguments to [gitlab-ci-local][GITLAB_CI_LOCAL] you c
 ```yaml
 repos:
   - repo: https://github.com/jbenner-radham/gitlab-ci-local-pre-commit
-    rev: v4.59.0
+    rev: v4.60.0
     hooks:
       - id: gitlab-ci-local
-        args: [--file, _gitlab-ci.yml] 
+        args: [--file, _gitlab-ci.yml]
 ```
 
 The above would be equivalent to running the following in the shell:
 
 ```shell
-gitlab-ci-local --file=_gitlab-ci.yml
+gitlab-ci-local --file _gitlab-ci.yml
 ```
+
+If you want to only run [gitlab-ci-local][GITLAB_CI_LOCAL] when certain files are changed, you can do something like:
+
+```yaml
+repos:
+  - repo: https://github.com/jbenner-radham/gitlab-ci-local-pre-commit
+    rev: v4.60.0
+    hooks:
+      # Run gitlab-ci-local when our GitLab CI config file or Python files are modified.
+      - id: gitlab-ci-local
+        files: '^(?:\.gitlab-ci\.yml|.+\.py)$'
+```
+
 License
 -------
 This project is licensed under the terms of the MIT License. You can view the full license [here](LICENSE).

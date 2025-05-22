@@ -1,6 +1,6 @@
 {
   "name": "gitlab-ci-local-pre-commit",
-  "version": "4.59.0",
+  "version": "4.60.0",
   "private": true,
   "description": "A pre-commit hook to run gitlab-ci-local.",
   "license": "MIT",
@@ -9,6 +9,6 @@
     "gitlab-ci-local": "./node_modules/gitlab-ci-local/src/index.js"
   },
   "dependencies": {
-    "gitlab-ci-local": "^4.59.0"
+    "gitlab-ci-local": "^4.60.0"
   }
 }
