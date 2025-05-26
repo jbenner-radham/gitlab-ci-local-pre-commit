@@ -9,6 +9,6 @@
     "gitlab-ci-local": "./node_modules/gitlab-ci-local/src/index.js"
   },
   "dependencies": {
-    "gitlab-ci-local": "^4.60.0"
+    "gitlab-ci-local": "^4.60.1"
   }
 }
