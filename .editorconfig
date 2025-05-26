@@ -12,10 +12,14 @@ insert_final_newline = true
 max_line_length = 120
 trim_trailing_whitespace = true
 
+[*.json]
+indent_size = 2
+indent_style = space
+
 [*.{ya,y}ml]
 indent_size = 2
 indent_style = space
 
-[*.json]
+[*.md]
 indent_size = 2
 indent_style = space

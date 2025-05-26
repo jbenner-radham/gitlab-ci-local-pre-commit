@@ -49,6 +49,22 @@ repos:
         files: '^(?:\.gitlab-ci\.yml|.+\.py)$'
 ```
 
+Non-Usage
+---------
+If you want to run [gitlab-ci-local][GITLAB_CI_LOCAL] as part of your [pre-commit][PRE_COMMIT] hooks without utilizing this repo, you can use a locally installed version of [gitlab-ci-local][GITLAB_CI_LOCAL] like so:
+
+```yaml
+repos:
+  - repo: local
+    hooks:
+      - id: gitlab-ci-local
+        name: gitlab ci local
+        entry: gitlab-ci-local
+        language: system
+        pass_filenames: false
+        require_serial: true
+```
+
 License
 -------
 This project is licensed under the terms of the MIT License. You can view the full license [here](LICENSE).
