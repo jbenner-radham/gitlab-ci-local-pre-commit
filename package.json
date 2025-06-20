@@ -1,6 +1,6 @@
 {
   "name": "gitlab-ci-local-pre-commit",
-  "version": "4.60.0",
+  "version": "4.60.1",
   "private": true,
   "description": "A pre-commit hook to run gitlab-ci-local.",
   "license": "MIT",
