@@ -8,7 +8,17 @@
   "bin": {
     "gitlab-ci-local": "./node_modules/gitlab-ci-local/src/index.js"
   },
+  "scripts": {
+    "changelog": "node ./scripts/changelog.mjs",
+    "package": "node ./scripts/package.mjs",
+    "prepare": "husky",
+    "readme": "node ./scripts/readme.mjs"
+  },
   "dependencies": {
     "gitlab-ci-local": "4.61.0"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "mustache": "^4.2.0"
   }
 }
